@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Raghad</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manjari:wght@700&family=Poppins:wght@100;200;400&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manjari:wght@700&family=Poppins:ital,wght@0,100;0,200;0,400;1,900&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        header {
+
+            padding: 10px;
+            text-align: right;
+            margin-right: 60px;
+        }
+
+        nav ul {
+            margin: 10;
+            padding: 10;
+        }
+
+        nav li {
+            display: inline-block;
+            margin-left: 20px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #000000;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        i {
+            margin-right: 8px;
+            
+        }
+        .active {
+            color: #D1884F; 
+        }
+
+        /* Style the image section */
+        section {
+            display: flex;
+            justify-content: flex-end; 
+        }
+
+        #image-container {
+            margin-top: 80px;
+            margin-right: 60px;
+
+  
+        }
+
+        #image-container img {
+            width: 300px;
+            height: 400px;
+            max-width: 100%;
+            border-radius: 0 0 0 180px; 
+            /* box-shadow: -15px 0px 3px rgb(59, 186, 219); */
+            
+        }
+        #background-div {
+            position: fixed;
+            height: 375px;
+            width: 300px;
+            right: 80px;
+            top: 180px;
+            border-radius: 0 0 0 180px; 
+            background-color: rgba(59, 186, 219,0.65);
+            z-index: -1;
+        }
+        #welcome-text {
+            position: absolute;
+            top: 140px;
+            left: 250px;
+            color: rgb(59, 186, 219);
+        }
+        #introduction{
+            position: absolute;
+            top: 160px;
+            left: 250px;
+            color: #008AAA;
+            font-family: 'Manjari', sans-serif;
+            font-family: 'Poppins', sans-serif;
+            font-size: 45px;
+            font-weight: bold;
+            width: 480px;
+            word-wrap: break-word; 
+            white-space: pre-line; 
+        }
+        #developer-text {
+            color: #D1884F;
+        }
+        #details{
+            position: absolute;
+            top: 340px;
+            left: 250px;
+            color: black;
+            font-size: 14px; 
+            font-weight: 400;
+            width: 480px;
+            word-wrap: break-word; 
+            white-space: pre-line; 
+        }
+        #see-more{
+            color:rgb(59, 186, 219) ;
+            cursor: pointer;
+        }
+        /* Button Container */
+        #button-container {
+            position: absolute;
+            top: 500px;
+            left: 250px;
+            display: flex;
+        }
+
+        /* Button Styles */
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            margin-right: 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+            outline: none;
+        }
+
+        #hire-me-button {
+            background-color: #008AAA;
+            color: white;
+            width: 120px;
+            height: 35px;
+            box-shadow: 0px 3px 6px rgba(59, 186, 219, 0.5); 
+        }
+
+        #see-projects-button {
+            background-color: white;
+            color: #008AAA;
+            border: 2px solid #008AAA;
+            height: 35px;
+        }
+
+    </style>
+
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a class="active" href="#"><i class="fa fa-home" style="font-size:24px;"></i> Home</a></li>
+                <li><a href="#"><i class="fa fa-user" style="font-size:24px;"></i> About Me</a></li>
+                <li><a href="#"><i class="fa fa-phone" style="font-size:24px;"></i> Contact Me</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        <div id="image-container">
+            <img src="images/raghad2.jpeg" >
+            <div id="background-div"></div>
+            <h3 id="welcome-text">Welcome to my site</h3>
+            <p id="introduction">Hi, I'm Raghad, a Backend <span id="developer-text">Developer.</span></p>
+            <p id="details">I'm currently in my fifth year of studying Computer Engineering at An-Najah National University. I'm seeking to find a training opportunity to learn new things that we didn't take at the University.<span id="see-more">See More...</span></p>
+            <div id="button-container">
+                <button id="hire-me-button" class="button">Hire me !</button>
+                <button id="see-projects-button" class="button">See My Projects</button>
+            </div>
+        </div>
+    </section>
+   
+
+
+</body>
+</html>
